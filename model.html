@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Modal</title>
+    <style>
+        .btn-warning{
+            margin-left: 180px;
+            width: 120px;
+        }
+    </style>
+  </head>
+  <body>
+    <button class="btn btn-primary" data-bs-target="#modal123" data-bs-toggle="modal"> login</button>
+      <div class="modal" id="modal123">
+        <div class="modal-dialog">
+            <div class="modal-content bg-info">
+                <div class="modal-header">
+                    <h1>Login page</h1>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="bi bi-google"></i><a href="">Login using Google</a><br>
+                    <i class="bi bi-facebook"></i><a href="">Login using Facebook</a>
+                 <form action="nav.html">
+                    <div class="form-floating">
+                        <input type="email" name="email" id="email" placeholder="email address" class="form-control" required>
+                        <label for="email">Enter your email address :</label>
+                    </div><br>
+                    <div class="form-floating">
+                        <input type="password" name="pswd" id="pswd" placeholder="password" class="form-control" required>
+                        <label for="pswd">Enter your Password</label>
+                    </div><br>
+                    <input type="submit" value="Login" class="btn btn-warning"><br>
+                    <a href="#">Forget Password?</a>
+                 </form>
+
+                </div>
+                <div class="modal-footer">
+                    <h6> New to website?<a href="">Create an Account</a></h6>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
